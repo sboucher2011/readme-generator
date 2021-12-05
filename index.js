@@ -6,6 +6,21 @@ const generateMarkdown = require('./utils/generateMarkdown');
 // TODO: Create an array of questions for user input
 const questions = ['What is the project name?', 'What is the project description?'];
 
+const promptUser = () => {
+    return inquirer.prompt([
+      {
+        type: 'input',
+        name: 'title',
+        message: questions[0]
+      },
+      {
+        type: 'input',
+        name: 'github',
+        message: questions[1]
+      }
+    ]);
+};
+
 // Function to write README file
 function writeToFile(fileName, data) {
     const readmeFile = generateMarkdown(data);
@@ -22,8 +37,11 @@ function writeToFile(fileName, data) {
 // Function to initialize app
 function init() {
     const dataArray = ['test', 'tester'];
-    writeToFile('readme', dataArray);
+    
 }
 
 // Function call to initialize app
 init();
+
+promptUser().then(answers => writeToFile('readme', answers));
+
