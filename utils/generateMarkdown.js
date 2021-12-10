@@ -20,7 +20,30 @@ function generateMarkdown(data) {
   console.log("generateMarkdown");
 
   renderLicenseBadge('MIT');
-  return `# ${data.title}
+  return `
+    # ${data.title}
+
+    ## Description
+    ${data.description}
+
+    ## Table of Contents
+
+    ## Installation
+
+    ## Usage
+
+    ## Credits
+
+    ## License
+
+    ## Badges
+
+    ## Features
+
+    ## Contributing
+
+    ## Tests
+
   
 `;
 }

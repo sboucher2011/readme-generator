@@ -15,7 +15,7 @@ const promptUser = () => {
       },
       {
         type: 'input',
-        name: 'github',
+        name: 'description',
         message: questions[1]
       }
     ]);
