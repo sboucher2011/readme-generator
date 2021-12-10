@@ -9,7 +9,9 @@
   "author": "sboucher2011",
   "license": "MIT",
   "dependencies": {
-    "inquirer": "^6.5.2"
+    "express": "^4.17.1",
+    "inquirer": "^6.5.2",
+    "squirrelly": "^8.0.8"
   },
   "repository": {
     "type": "git",
