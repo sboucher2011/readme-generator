@@ -45,6 +45,7 @@ ${data.usage}
 ${data.credits}
 
 ## License
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
 ## Badges
 
@@ -58,8 +59,8 @@ ${data.contribute}
 ${data.tests}
 
 ## Questions
-${data.github}
-${data.email}
+My repository can be found here: (www.github.com/${data.github})
+For questions you can contact me via my email: (${data.email})
   
 `;
 }

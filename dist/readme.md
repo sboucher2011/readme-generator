@@ -2,7 +2,7 @@
 # Project Name
 
 ## Description
-Project descriptions for this project
+Description HERE
 
 ## Table of Contents
 * [Installation](#installation)
@@ -15,28 +15,29 @@ Project descriptions for this project
 * [Questions](#questions)
 
 ## Installation
-save on your computer
+intall steps
 
 ## Usage
-no instructions needed
+project
 
 ## Credits
-just me!
+just me
 
 ## License
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
 
 ## Badges
 
 ## Features
-only a few features
+features
 
 ## Contributing
-venmo!
+no
 
 ## Tests
-no tests
+no
 
 ## Questions
-sboucher2011
-sboucher2011@gmail.com
+My repository can be found here: (www.github.com/sboucher2011)
+For questions you can contact me via my email: (sboucher2011@gmail.com)
   
