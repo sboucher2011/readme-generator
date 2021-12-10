@@ -29,20 +29,26 @@ function generateMarkdown(data) {
     ## Table of Contents
 
     ## Installation
+    ${data.install}
 
     ## Usage
+    ${data.usage}
 
     ## Credits
+    ${data.credits}
 
     ## License
 
     ## Badges
 
     ## Features
+    ${data.features}
 
     ## Contributing
+    ${data.contribute}
 
     ## Tests
+    ${data.tests}
 
   
 `;

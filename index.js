@@ -4,7 +4,14 @@ const inquirer = require('inquirer');
 const generateMarkdown = require('./utils/generateMarkdown');
 
 // TODO: Create an array of questions for user input
-const questions = ['What is the project name?', 'What is the project description?'];
+const questions = ['What is the project name?', 
+                  'What is the project description?', 
+                  'What steps are required to install your project?', 
+                  'What instructions and/or examples does the user need to use your program?', 
+                  'Do you have any collaborators or third party assets that require attribution?', 
+                  'Would you like to describe any features?', 
+                  'How can someone contribute to your package?', 
+                  'Does your appliction have tests? How would someone run them?'];
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -17,6 +24,36 @@ const promptUser = () => {
         type: 'input',
         name: 'description',
         message: questions[1]
+      },
+      {
+        type: 'input',
+        name: 'install',
+        message: questions[2]
+      },
+      {
+        type: 'input',
+        name: 'usage',
+        message: questions[3]
+      },
+      {
+        type: 'input',
+        name: 'credits',
+        message: questions[4]
+      },
+      {
+        type: 'input',
+        name: 'features',
+        message: questions[5]
+      },
+      {
+        type: 'input',
+        name: 'contribute',
+        message: questions[6]
+      },
+      {
+        type: 'input',
+        name: 'tests',
+        message: questions[7]
       }
     ]);
 };
