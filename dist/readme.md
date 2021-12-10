@@ -1,8 +1,11 @@
 
 # Project Name
 
+![badmath](https://img.shields.io/badge/license-MIT-green)
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
 ## Description
-Description HERE
+description here
 
 ## Table of Contents
 * [Installation](#installation)
@@ -15,24 +18,21 @@ Description HERE
 * [Questions](#questions)
 
 ## Installation
-intall steps
+install steps
 
 ## Usage
-project
+usage directions
 
 ## Credits
-just me
+just ME!
 
 ## License
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-## Badges
 
 ## Features
-features
+Javascript, NodeJS
 
 ## Contributing
-no
+venmo
 
 ## Tests
 no

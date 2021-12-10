@@ -22,6 +22,9 @@ function generateMarkdown(data) {
   return `
 # ${data.title}
 
+![badmath](https://img.shields.io/badge/license-MIT-green)
+![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+
 ## Description
 ${data.description}
 
@@ -45,9 +48,6 @@ ${data.usage}
 ${data.credits}
 
 ## License
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
-
-## Badges
 
 ## Features
 ${data.features}
