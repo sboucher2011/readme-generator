@@ -11,7 +11,9 @@ const questions = ['What is the project name?',
                   'Do you have any collaborators or third party assets that require attribution?', 
                   'Would you like to describe any features?', 
                   'How can someone contribute to your package?', 
-                  'Does your appliction have tests? How would someone run them?'];
+                  'Does your appliction have tests? How would someone run them?',
+                  'Enter your github username',
+                  'What is the email address someone should send questions to?'];
 
 const promptUser = () => {
     return inquirer.prompt([
@@ -54,6 +56,16 @@ const promptUser = () => {
         type: 'input',
         name: 'tests',
         message: questions[7]
+      },
+      {
+        type: 'input',
+        name: 'github',
+        message: questions[8]
+      },
+      {
+        type: 'input',
+        name: 'email',
+        message: questions[9]
       }
     ]);
 };
