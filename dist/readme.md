@@ -1,7 +1,7 @@
 
 # d
 
-
+![badmath](https://img.shields.io/badge/license-GNU-orange)
 
 ## Description
 d
@@ -26,8 +26,9 @@ d
 ## Credits
 d
 
+
 ## License
-undefined
+  
 
 ## Contributing
 d
