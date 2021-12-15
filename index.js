@@ -9,10 +9,10 @@ const questions = ['What is the project name?',
                   'What steps are required to install your project?', 
                   'What instructions and/or examples does the user need to use your program?', 
                   'Do you have any collaborators or third party assets that require attribution?', 
-                  'Would you like to describe any features?', 
+                  'What kind of license should your project have?', 
                   'How can someone contribute to your package?', 
-                  'Does your appliction have tests? How would someone run them?',
-                  'Enter your github username',
+                  'What command should be run to run tests?',
+                  'Enter your GitHub username',
                   'What is the email address someone should send questions to?'];
 
 const promptUser = () => {
@@ -43,9 +43,11 @@ const promptUser = () => {
         message: questions[4]
       },
       {
-        type: 'input',
-        name: 'features',
-        message: questions[5]
+        
+        type: 'list',
+        name: 'license',
+        message: questions[5],
+        choices: ['MIT', 'GNU General Public License', 'Apache', 'Eclipse Public License', 'None']
       },
       {
         type: 'input',

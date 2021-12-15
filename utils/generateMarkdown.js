@@ -1,29 +1,40 @@
-// TODO: Create a function that returns a license badge based on which license is passed in
-// If there is no license, return an empty string
-
+// Function that returns a license badge based on which license is passed in
+// If there is no license, returns an empty string
 function renderLicenseBadge(license) {
-    return 'https://img.shields.io/badge/licses-MIT-yellowgreen'
+    if (license == "MIT") {
+      return '![badmath](https://img.shields.io/badge/license-MIT-green)';
+    } else if (license == "GNU General Public License") {
+      return '![badmath](https://img.shields.io/badge/license-GNU-orange)';
+    } else if (license == 'Apache') {
+      return '![badmath](https://img.shields.io/badge/license-Apache-blue)';
+    } else if (license == 'Eclipse Public License') {
+      return '![badmath](https://img.shields.io/badge/license-Eclipse-red)';
+    } else {
+      return "";
+    }
 }
-
 
 // TODO: Create a function that returns the license link
 // If there is no license, return an empty string
-function renderLicenseLink(license) {}
+function renderLicenseLink(license) {
+  return 'hello';
+}
 
 // TODO: Create a function that returns the license section of README
 // If there is no license, return an empty string
-function renderLicenseSection(license) {}
+function renderLicenseSection(license) {
 
-// TODO: Create a function to generate markdown for README
+  renderLicenseLink(license);
+}
+
+// Generates markdown for README
 function generateMarkdown(data) {
   const { username, ...title} = data;
 
-  renderLicenseBadge('MIT');
   return `
 # ${data.title}
 
-![badmath](https://img.shields.io/badge/license-MIT-green)
-![badmath](https://img.shields.io/github/languages/top/nielsenjared/badmath)
+${renderLicenseBadge(data.license)}
 
 ## Description
 ${data.description}
@@ -33,13 +44,14 @@ ${data.description}
 * [Usage](#usage)
 * [Credits](#credits)
 * [License](#license)
-* [Features](#features)
 * [Contributing](#contributing)
 * [Tests](#tests)
 * [Questions](#questions)
 
 ## Installation
+\`\`\`shell
 ${data.install}
+\`\`\`
 
 ## Usage
 ${data.usage}
@@ -48,9 +60,7 @@ ${data.usage}
 ${data.credits}
 
 ## License
-
-## Features
-${data.features}
+${renderLicenseSection(data.license)}
 
 ## Contributing
 ${data.contribute}
