@@ -1,10 +1,10 @@
 
-# d
+# Test
 
-![badmath](https://img.shields.io/badge/license-GNU-orange)
+![badmath](https://img.shields.io/badge/license-MIT-green)
 
 ## Description
-d
+description
 
 ## Table of Contents
 * [Installation](#installation)
@@ -17,26 +17,26 @@ d
 
 ## Installation
 ```shell
-d
+npm install
 ```
 
 ## Usage
-d
+s
 
 ## Credits
-d
-
+no
 
 ## License
+https://opensource.org/licenses/MIT
   
 
 ## Contributing
-d
+venmo
 
 ## Tests
-d
+no tests
 
 ## Questions
-My repository can be found here: (www.github.com/d)
-For questions you can contact me via my email: (d)
+My repository can be found here: (www.github.com/sboucher2011)
+For questions you can contact me via my email: (sboucher2011@gmail.com)
   
