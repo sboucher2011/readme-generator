@@ -88,7 +88,7 @@ ${data.contribute}
 ${data.tests}
 
 ## Questions
-My repository can be found here: (www.github.com/${data.github})
+My repository can be found here: (https://github.com//${data.github})
 For questions you can contact me via my email: (${data.email})
   
 `;
